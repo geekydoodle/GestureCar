@@ -1,153 +1,164 @@
-GestureCar 🚗
+<div align="center">
 
-GestureCar is an ESP32-based robotic car controlled using hand gestures.
-A webcam captures your hand movements, Python processes them using MediaPipe,
-and commands are sent wirelessly via Bluetooth to the ESP32 to drive the motors.
+# 🚗 GestureCar
 
-This project combines Computer Vision, Python programming, Bluetooth communication,
-and embedded robotics.
+### ✋ Gesture-Controlled ESP32 Robotic Car
 
-FEATURES ✨
+![Python](https://img.shields.io/badge/Python-3.9+-blue)
+![ESP32](https://img.shields.io/badge/ESP32-Bluetooth-green)
+![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-red)
+![MediaPipe](https://img.shields.io/badge/MediaPipe-Gesture%20Recognition-orange)
 
-Real-time hand tracking
+Control a robotic car using only your hand gestures
 
-Wireless Bluetooth control
+</div>
 
-No physical remote required
+---
 
-Differential drive steering (no servo motor)
+GestureCar lets you control a robotic car using **vision-based gesture recognition**.
+Your webcam detects gestures → Python interprets commands → Bluetooth sends signals → ESP32 drives the motors.
 
-Smooth forward, backward, left, and right movement
+A fun blend of **Computer Vision + Robotics + Embedded Systems + Wireless Control**.
 
-Low latency response
+---
 
-Simple and low-cost hardware
+## ✨ Features
 
-HOW IT WORKS 🧠
+✅ Real-time gesture recognition
+✅ Vision-based control (no physical remote)
+✅ Wireless Bluetooth communication
+✅ Differential drive steering (no servo motor)
+✅ Smooth movement with low latency
+✅ Beginner-friendly and low cost
 
-Webcam captures your hand
+---
 
-MediaPipe detects hand landmarks
+## 🧠 How It Works
 
-Python recognizes gestures
+```
+Gesture → Camera → MediaPipe → Python Logic → Bluetooth → ESP32 → Motors → 🚗
+```
 
-Commands sent through Bluetooth
+1. Webcam captures your hand gestures
+2. MediaPipe detects landmarks
+3. Python recognizes the gesture
+4. Command sent via Bluetooth
+5. ESP32 drives the motors
 
-ESP32 receives commands
+---
 
-Motor driver controls left and right motors
+## 🛠 Hardware Required
 
-Flow:
+* ESP32 board
+* L298N / L293D motor driver
+* 2 or 4 DC motors
+* Robot chassis + wheels
+* Battery pack
+* Jumper wires
+* Webcam
+* Laptop/PC with Bluetooth
 
-Hand -> Camera -> Python -> Bluetooth -> ESP32 -> Motors -> Car moves
+⚠️ Turning is done using differential motor speeds (no servo needed).
 
-HARDWARE REQUIRED 🛠
+---
 
-ESP32 board
+## 💻 Software Required
 
-L298N or L293D motor driver
+### PC
 
-2 or 4 DC motors
-
-Robot chassis with wheels
-
-Battery pack
-
-Jumper wires
-
-Webcam
-
-Laptop or PC with Bluetooth
-
-Note: No servo motor is used. Turning is done by varying left/right motor speeds.
-
-SOFTWARE REQUIRED 💻
-
-PC Side:
-
-Python 3.9 or newer
-
-OpenCV
-
-MediaPipe
-
-PySerial
+* Python 3.9+
+* OpenCV
+* MediaPipe
+* PySerial
 
 Install dependencies:
 
+```bash
 pip install opencv-python mediapipe pyserial
+```
 
-ESP32 Side:
+### ESP32
 
-Arduino IDE or PlatformIO
+* Arduino IDE or PlatformIO
+* ESP32 board package
+* BluetoothSerial library
 
-ESP32 board package
+---
 
-BluetoothSerial library
+## 📂 Project Structure
 
-PROJECT STRUCTURE 📂
-
+```
 GestureCar/
+│
+├── python/
+│   ├── main.py
+│   ├── gestures.py
+│
+├── esp32/
+│   ├── car_control.ino
+│
+└── README.md
+```
 
-python/
-main.py - Camera + gesture detection + Bluetooth sender
-gestures.py - Gesture recognition logic
+---
 
-esp32/
-car_control.ino - Motor control code
+## 🎮 Gesture Controls
 
-README.txt
+| Gesture      | Action        |
+| ------------ | ------------- |
+| Hand forward | Move forward  |
+| Hand back    | Move backward |
+| Tilt left    | Turn left     |
+| Tilt right   | Turn right    |
+| Closed fist  | Stop          |
 
-GESTURE CONTROLS 🎮
+Customize gestures inside `gestures.py`.
 
-Hand forward -> Move forward
-Hand back -> Move backward
-Tilt left -> Turn left
-Tilt right -> Turn right
-Closed fist -> Stop
+---
 
-Gestures can be modified inside the Python code.
+## 🚀 Setup
 
-SETUP INSTRUCTIONS 🚀
+### 1️⃣ Upload ESP32 Code
 
-Step 1:
-Upload car_control.ino to ESP32 using Arduino IDE
+```
+esp32/car_control.ino
+```
 
-Step 2:
-Pair ESP32 with your laptop via Bluetooth
+### 2️⃣ Pair Bluetooth
 
-Step 3:
-Run the program:
+Pair ESP32 with your laptop and note the COM port.
 
+### 3️⃣ Run Python
+
+```bash
 python main.py
+```
 
-Step 4:
-Show gestures to the camera and control the car
+### 4️⃣ Control the car
 
-CUSTOMIZATION IDEAS ⚙
+Show gestures to the camera and drive 🎉
 
-Add speed control
+---
 
-Add more gestures
+## 🎯 Use Cases
 
-Add obstacle avoidance sensors
+* Touchless robotic control using vision
+* Learning computer vision and embedded systems
+* STEM and robotics school projects
+* Gesture-based human–machine interaction demos
+* Bluetooth automation experiments
+* Prototyping smart rover systems
+* Showcasing AI + robotics integration
 
-Use WiFi instead of Bluetooth
+---
 
-Use phone camera
+## 🧩 Technologies Used
 
-Add video streaming
+Python 🐍 • OpenCV 👁 • MediaPipe ✋ • Bluetooth 📡 • ESP32 🔌 • Embedded C++
 
-TECHNOLOGIES USED 🧩
+---
 
-Python
-OpenCV
-MediaPipe
-Bluetooth
-ESP32
-Embedded C++
+## 👤 Author
 
-AUTHOR 👤
-
-George Bijo
-Robotics and Computer Vision Enthusiast
+**George Bijo**
+Robotics • Embedded Systems • Computer Vision • Robotics Enthusiast
