@@ -106,11 +106,11 @@ GestureCar/
 
 | Gesture      | Action        |
 | ------------ | ------------- |
-| Hand forward | Move forward  |
-| Hand back    | Move backward |
-| Tilt left    | Turn left     |
-| Tilt right   | Turn right    |
-| Closed fist  | Stop          |
+| ✊ Closed fist | Move forward  |
+| ☝️ Index finger up    | Move backward |
+| ✌️ Two fingers    | Turn left     |
+| 🤟 Three fingers   | Turn right    |
+| ✋ Open palm  | Stop          |
 
 Customize gestures inside `gestures.py`.
 
