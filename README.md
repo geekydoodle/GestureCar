@@ -114,10 +114,10 @@ Customize gestures inside `gestures.py`.
 
 ## 🚀 Setup
 
-### 1️⃣ Upload ESP32 Code
+### 1️⃣ Upload ESP32 Code using Arduino IDE
 
 ```
-esp32/car_control.ino
+car_control/car_control.ino
 ```
 
 ### 2️⃣ Pair Bluetooth
