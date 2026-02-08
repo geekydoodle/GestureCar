@@ -161,4 +161,3 @@ Python 🐍 • OpenCV 👁 • MediaPipe ✋ • Bluetooth 📡 • ESP32 🔌 
 ## 👤 Author
 
 **George Bijo**
-Robotics • Embedded Systems • Computer Vision • Robotics Enthusiast
