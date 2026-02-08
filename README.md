@@ -27,7 +27,6 @@ A fun blend of **Computer Vision + Robotics + Embedded Systems + Wireless Contro
 ✅ Real-time gesture recognition
 ✅ Vision-based control (no physical remote)
 ✅ Wireless Bluetooth communication
-✅ Differential drive steering (no servo motor)
 ✅ Smooth movement with low latency
 ✅ Beginner-friendly and low cost
 
@@ -50,15 +49,13 @@ Gesture → Camera → MediaPipe → Python Logic → Bluetooth → ESP32 → Mo
 ## 🛠 Hardware Required
 
 * ESP32 board
-* L298N / L293D motor driver
-* 2 or 4 DC motors
+* L298N motor driver
+* 2 DC motors
 * Robot chassis + wheels
-* Battery pack
+* Battery pack (I'm using a power bank)
 * Jumper wires
 * Webcam
 * Laptop/PC with Bluetooth
-
-⚠️ Turning is done using differential motor speeds (no servo needed).
 
 ---
 
@@ -90,11 +87,10 @@ pip install opencv-python mediapipe pyserial
 ```
 GestureCar/
 │
-├── python/
-│   ├── main.py
-│   ├── gestures.py
+│── bt.py
+│── gesture_car.py
 │
-├── esp32/
+├── car_control/
 │   ├── car_control.ino
 │
 └── README.md
@@ -109,7 +105,7 @@ GestureCar/
 | ✊ Closed fist | Move forward  |
 | ☝️ Index finger up    | Move backward |
 | ✌️ Two fingers    | Turn left     |
-| 🤟 Three fingers   | Turn right    |
+| ✌️☝️ Three fingers   | Turn right    |
 | ✋ Open palm  | Stop          |
 
 Customize gestures inside `gestures.py`.
@@ -126,12 +122,14 @@ esp32/car_control.ino
 
 ### 2️⃣ Pair Bluetooth
 
-Pair ESP32 with your laptop and note the COM port.
+Pair ESP32 with your laptop and note the COM port
+
+pls note: It's usually COM7 in that case don't change anything, if it's different go to the the bt.py and change the port to whatever it is.
 
 ### 3️⃣ Run Python
 
-```bash
-python main.py
+```
+python gesture_car.py
 ```
 
 ### 4️⃣ Control the car
