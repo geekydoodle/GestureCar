@@ -71,7 +71,7 @@ Gesture → Camera → MediaPipe → Python Logic → Bluetooth → ESP32 → Mo
 Install dependencies: (It's suggested that you do this in a virtual environment)
 
 ```bash
-pip install opencv-python "mediapipe<=0.10.21" pyserial
+pip install opencv-python "mediapipe<=0.10.21" pyserial pygame
 
 OR
 
