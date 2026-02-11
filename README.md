@@ -169,4 +169,4 @@ Python 🐍 • OpenCV 👁 • MediaPipe ✋ • Bluetooth 📡 • ESP32 🔌 
 
 ## 👤 Author
 
-**George Bijo**
+### **George Bijo**
