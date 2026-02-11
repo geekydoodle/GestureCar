@@ -65,13 +65,17 @@ Gesture → Camera → MediaPipe → Python Logic → Bluetooth → ESP32 → Mo
 
 * Python 3.9+
 * OpenCV
-* MediaPipe
+* MediaPipe (Currently only works till version 0.10.21)
 * PySerial
 
-Install dependencies:
+Install dependencies: (It's suggested that you do this in a virtual environment)
 
 ```bash
-pip install opencv-python mediapipe pyserial
+pip install opencv-python "mediapipe<=0.10.21" pyserial
+
+OR
+
+pip install -r requirements.txt
 ```
 
 ### ESP32
