@@ -157,7 +157,7 @@ while True:
         bt.command('S')
 
     # Show camera feed
-    cv2.imshow("Gesture Controlled Car", img)
+    cv2.imshow("GestureCar", img)
 
     # Quit on 'q'
     if cv2.waitKey(1) & 0xFF == ord('q'):
@@ -168,4 +168,5 @@ while True:
 # Cleanup
 # -------------------------------
 cap.release()
+
 cv2.destroyAllWindows()
