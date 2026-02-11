@@ -119,8 +119,6 @@ GestureCar/
 | ✌️☝️ Three fingers   | Turn right    |
 | ✋ Open palm  | Stop          |
 
-Customize gestures inside `gestures.py`.
-
 ---
 
 ## 🚀 Setup
