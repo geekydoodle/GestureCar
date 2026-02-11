@@ -29,6 +29,7 @@ A fun blend of **Computer Vision + Robotics + Embedded Systems + Wireless Contro
 ✅ Wireless Bluetooth communication
 ✅ Smooth movement with low latency
 ✅ Beginner-friendly and low cost
+✅ Voice feedback for actions using ElevenLabs AI voice generation
 
 ---
 
@@ -67,6 +68,7 @@ Gesture → Camera → MediaPipe → Python Logic → Bluetooth → ESP32 → Mo
 * OpenCV
 * MediaPipe (Currently only works till version 0.10.21)
 * PySerial
+* Pygame
 
 Install dependencies: (It's suggested that you do this in a virtual environment)
 
@@ -80,7 +82,7 @@ pip install -r requirements.txt
 
 ### ESP32
 
-* Arduino IDE or PlatformIO
+* Arduino IDE
 * ESP32 board package
 * BluetoothSerial library
 
