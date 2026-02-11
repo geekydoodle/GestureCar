@@ -25,10 +25,15 @@ A fun blend of **Computer Vision + Robotics + Embedded Systems + Wireless Contro
 ## ✨ Features
 
 ✅ Real-time gesture recognition
+
 ✅ Vision-based control (no physical remote)
+
 ✅ Wireless Bluetooth communication
+
 ✅ Smooth movement with low latency
+
 ✅ Beginner-friendly and low cost
+
 ✅ Voice feedback for actions using ElevenLabs AI voice generation
 
 ---
