@@ -33,6 +33,7 @@ tipIds = [4, 8, 12, 16, 20]
 # Camera setup
 # -------------------------------
 cap = cv2.VideoCapture(0)       # Use external camera (change if needed)
+cv2.namedWindow("GestureCar", cv2.WINDOW_NORMAL)
 
 # -------------------------------
 # Main loop
@@ -170,3 +171,4 @@ while True:
 cap.release()
 
 cv2.destroyAllWindows()
+
