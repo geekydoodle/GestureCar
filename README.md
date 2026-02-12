@@ -8,6 +8,7 @@
 ![ESP32](https://img.shields.io/badge/ESP32-Bluetooth-green)
 ![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-red)
 ![MediaPipe](https://img.shields.io/badge/MediaPipe-Gesture%20Recognition-orange)
+![Pygame](https://img.shields.io/badge/Pygame-Voice%20Feedback-brightgreen)
 
 Control a robotic car using only your hand gestures
 
