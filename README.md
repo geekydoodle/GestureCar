@@ -102,6 +102,8 @@ GestureCar/
 │── bt.py
 │── gesture_car.py
 │
+│── sounds/
+│
 ├── car_control/
 │   ├── car_control.ino
 │
